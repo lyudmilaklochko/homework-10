@@ -1,0 +1,120 @@
+$color-white: #fff;
+$color-black: #000000;
+$color-gray: #bfbfbf;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1;
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  max-width: 1840px;
+  padding: 0 40px;
+}
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: $color-white;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu_nav {
+    ul {
+      display: flex;
+      flex-direction: row;
+      li {
+        margin-right: 20px;
+        list-style: none;
+        font-size: 20px;
+        color: $color-black;
+        opacity: 0.2;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+        a {
+          text-decoration: none;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          color: $color-black;
+        }
+      }
+    }
+  }
+}
+
+.text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-image: url(../img/bg_image.svg);
+  background-repeat: no-repeat;
+  background-position-x: -19.75%;
+  background-position-y: 3.2%;
+
+  ol {
+    margin-top: 59px;
+    li {
+      list-style: none;
+      p {
+        line-height: 48px;
+        font-family: "PT Sans";
+        font-weight: 400;
+        font-size: 36px;
+        color: $color-black;
+        line-height: 48px;
+      }
+      h2 {
+        margin-top: 25px;
+        padding-bottom: 15px;
+        font-family: "Roboto";
+        font-weight: 900;
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+.text_nav {
+  position: sticky;
+  top: 59px;
+  li {
+    width: max-content;
+    margin-right: 217px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $color-gray;
+    &:not(:last-child) {
+      margin-bottom: 93px;
+    }
+    a {
+      font-family: "Roboto";
+      font-weight: 900;
+      font-size: 36px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: $color-black;
+      text-decoration: none;
+    }
+  }
+}
+
+.nested_list li {
+  padding-bottom: 15px;
+  line-height: 48px;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 36px;
+  color: $color-black;
+  line-height: 48px;
+  &::before {
+    content: "+";
+  }
+}

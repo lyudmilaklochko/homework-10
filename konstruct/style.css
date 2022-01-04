@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Thin.ttf");
+}
+
+body {
+  max-width: 1858px;
+  max-height: 2417px;
+  margin: 80px 43px 440px 15px;
+}
+.header {
+  margin-top: 69px;
+  margin-bottom: 40px;
+  max-height: 39px;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header img {
+  max-width: 244px;
+  max-height: 56px;
+}
+.menu_nav {
+  min-width: 270px;
+  min-height: 23px;
+}
+.menu_nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu_nav li {
+  margin-right: 20px;
+  list-style: none;
+  font-size: 20px;
+  color: #000000;
+  opacity: 0.2;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.menu_nav a {
+  text-decoration: none;
+}
+
+.text h2 {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #000000;
+}
+.text h2::after {
+  content: "\2042";
+}
+
+.text p {
+  font-family: "Poppins";
+  font-weight: 100;
+  color: #000000;
+}
+
+.nested_list {
+  font-family: "Poppins";
+  font-weight: 100;
+  color: #000000;
+}
+
+.nested_list li {
+  list-style: none;
+}
+.nested_list li::before {
+  content: "+";
+}

@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1;
+  scroll-behavior: smooth;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+}
+.container {
+  display: flex;
+  /* margin-top: 59px; */
+  max-width: 1840px;
+  padding: 0 40px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu_nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu_nav li {
+  margin-right: 20px;
+  list-style: none;
+  font-size: 20px;
+  color: #000000;
+  opacity: 0.2;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.menu_nav a {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #000000;
+}
+
+.text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-image: url(../img/bg_image.svg);
+  background-repeat: no-repeat;
+  background-position-x: -19.75%;
+  background-position-y: 3.2%;
+  /* background-attachment: fixed; */
+}
+
+.text_nav {
+  position: sticky;
+  top: 59px;
+}
+
+.text_nav a {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 36px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+.text_nav li {
+  width: max-content;
+  margin-right: 217px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #bfbfbf;
+}
+.text_nav li:not(:last-child) {
+  margin-bottom: 93px;
+}
+
+.list {
+  margin-top: 59px;
+}
+
+.list li {
+  /* border-top: 12px solid #000000; */
+  list-style: none;
+}
+
+.list p {
+  line-height: 48px;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 36px;
+  color: #000000;
+  line-height: 48px;
+}
+
+.list h2 {
+  margin-top: 25px;
+  padding-bottom: 15px;
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 36px;
+}
+.nested_list li {
+  padding-bottom: 15px;
+  line-height: 48px;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 36px;
+  color: #000000;
+  line-height: 48px;
+}
+
+.nested_list li::before {
+  content: "+";
+}

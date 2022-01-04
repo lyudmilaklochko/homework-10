@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konstruct template</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <h1 class="visually-hidden">Body heading</h1> -->
+    <header class="header">
+        <div class="container">
+            <!-- <h2 class="visually-hidden">Nav heading</h2> -->
+            <nav class="menu_nav">
+                <ul>
+                    <li>
+                        <a href="#">
+                        <img src="img/lang.jpg" alt="lang" width="42px" height="25px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Documentation /</a>
+                    </li>
+                    <li>
+                        <a href="#">Who's using</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#">
+                <img src="img/company-logo-black.png" alt="Logo" width="244px" height="56px">
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <aside>
+            <div class="text_nav">
+                <nav>
+                    <ol>
+                        <li>
+                            <a href="#introduction">Introduction ...</a>
+                        </li>
+                        <li>
+                            <a href="#components">Core Components</a>
+                        </li>
+                        <li>
+                            <a href="#fundamentals">React Fundamentals</a>
+                        </li>
+                        <li>
+                            <a href="#handling">Handling Text Input</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </aside>
+        <main>
+            <section class="text">
+                <ol class="list">
+                    <li id="introduction">
+                        <h2>Introduction</h2>
+                        <p>Welcome to the very start of your React Native journey! If you're looking for environment setup
+                         instructions, they've
+                         moved to their own section. Continue reading for an introduction to the documentation, Native
+                         Components, React, and more!
+                        </p>
+                    </li>
+                    <li id="components">
+                        <h2>Core Components</h2>
+                        <p>React Native is an open source framework for building Android and iOS applications using React
+                         and the app platform’s
+                         native capabiles. With React Native, you use JavaScript to access your platform’s APIs as well
+                         as to describe the
+                         appearance and behavior of your UI using React components: bundles of reusable, nestable code.
+                         You can learn more about
+                         React in the next section. But first, let’s cover how components work in React Native.
+                        </p>
+                    </li>
+                    <li id="fundamentals">
+                        <h2>React Fundamentals</h2>
+                        <p>React Native runs on React, a popular open source library for building user interfaces with
+                        JavaScript. To make the most
+                        of React Native, it helps to understand React itself. This section can get you started or can
+                        serve as a refresher course.</p>
+                        <br>
+                        <p>We’re going to cover the core concepts behind React:</p>
+                        <br>
+                        <ul class="nested_list">
+                            <li>
+                                <b>components.</b> The rest of this introduction to React uses cats in its examples: friendly,
+                                approachable creatures that
+                                need names and a cafe to work in.
+                            </li>
+                            <li>
+                                <b>JSX.</b> React and React Native use JSX, a syntax that lets you write elements inside JavaScript
+                                like so: Hello, I am your cat!. The React docs have a comprehensive guide to JSX you can refer to learn even
+                                more. Because JSX is JavaScript, you can use variables inside it. Here you are declaring a name for the cat,
+                                name, and embedding it with curly braces inside .
+                            </li>
+                            <li>
+                                <b>props.</b> Props is short for “properties”.
+                            </li>
+                            <li>
+                               <b>state.</b> While you can think of props as arguments you use to configure how components render, state is like a component’s
+                            personal data storage. State is useful for handling data that changes over time or that comes from user interaction.
+                            State gives your components memory!
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="handling">
+                        <h2>Handling Text Input</h2>
+                        <p>Text Input is a Core Component that allows the user to enter text. It has an onChangeText prop
+                        that takes a function
+                        to be called every time the text changed, and an onSubmitEditing prop that takes a function to
+                        be called when the
+                        text is submitted.</p>
+                        <br>
+                        <p>For example, let's say that as the user types, you're translating their words into a different
+                        language. In this new
+                        language, every single word is written the same way: 🍕. So the sentence "Hello there Bob" would
+                        be translated as
+                        "🍕🍕🍕".</p>
+                    </li>
+                </ol>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
